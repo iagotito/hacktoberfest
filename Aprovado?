@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+public class Media {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Double primeiroNumero = sc.nextDouble();
+		Double segundoNumero = sc.nextDouble();
+		Double media = (primeiroNumero + segundoNumero)/2;
+		
+		if (media >= 7.0){
+			
+			System.out.println("pass: True!");
+			
+		} else {
+			
+			System.out.println("pass: False!"); 
+
+		}
+
+	}
+	
+}
