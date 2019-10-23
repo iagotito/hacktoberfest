@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Calculadora {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String operacao = sc.nextLine();
+		
+		if ((operacao.equals("+")) || (operacao.equals("-")) || (operacao.equals("*")) || (operacao.equals("/"))) {
+				
+			Double primeiroNumero = sc.nextDouble();
+			Double segundoNumero = sc.nextDouble();
+			
+			if (operacao.equals("+")) {
+							
+				Double resultado = primeiroNumero + segundoNumero;
+				System.out.println("RESULTADO: " + resultado);
+					
+			} else if (operacao.equals("-")) {
+				
+				Double resultado = primeiroNumero - segundoNumero;
+				System.out.println("RESULTADO: " + resultado);
+				
+			} else if (operacao.equals("*")) {
+				
+				Double resultado = primeiroNumero * segundoNumero;
+				System.out.println("RESULTADO: " + resultado);
+				
+			} else if (operacao.equals("/")) {
+				if (segundoNumero == 0.0) {
+					
+					System.out.println("ERRO");
+				
+				} else {
+					
+					Double resultado = primeiroNumero / segundoNumero;
+					System.out.println("RESULTADO: " + resultado);
+				
+				}
+			
+			} 
+	
+		} else {
+			
+			System.out.println("ENTRADA INVALIDA");
+			
+		} 
+
+	}
+}
