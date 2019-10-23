@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+
+public class Monotona {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Double n1 = sc.nextDouble();
+		Double n2 = sc.nextDouble();
+		Double n3 = sc.nextDouble();
+		Double n4 = sc.nextDouble();
+		
+		if ((n1 < n2) && (n2 < n3) && (n3 < n4)) {
+		
+			System.out.println("POSSIVELMENTE ESTRITAMENTE CRESCENTE");
+		
+		} else if ((n1 > n2) && (n2 > n3) && (n3 > n4)) {
+			
+			System.out.println("POSSIVELMENTE ESTRITAMENTE DECRESCENTE");
+			
+		} else {
+			
+			System.out.println("FUNCAO NAO ESTRITAMENTE CRES/DECR");
+		
+		}
+	
+	}
+
+}
